@@ -16,6 +16,7 @@ namespace DemoAPI.Controllers
             _productRepository = productRepository;
         }
 
+        //Get product
         [HttpGet]
         [ActionName(nameof(GetProductsAsync))]
         public IEnumerable<Product> GetProductsAsync()
